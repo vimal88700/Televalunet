@@ -4,6 +4,9 @@ apply plugin: 'com.android.library'
 apply plugin: 'org.telegram.lottie-meta'
 apply plugin: 'idea'
 
+def telegramApiId = System.getenv('TELEGRAM_API_ID') ?: '4'
+def telegramApiHash = System.getenv('TELEGRAM_API_HASH') ?: '014b35b6184100b085b0d0572f9b5103'
+
 idea {
     module {
         excludeDirs += [
@@ -128,6 +131,8 @@ android {
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 36
+        buildConfigField "int", "TELEGRAM_API_ID", telegramApiId
+        buildConfigField "String", "TELEGRAM_API_HASH", '"' + telegramApiHash + '"'
 
         vectorDrawables.generatedDensities = ['mdpi', 'hdpi', 'xhdpi', 'xxhdpi']
 
