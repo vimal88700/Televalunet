@@ -29,7 +29,6 @@ public final class ShrinkHighPrivacy {
                     ExifInterface.TAG_GPS_LONGITUDE_REF,
                     ExifInterface.TAG_MAKE,
                     ExifInterface.TAG_MODEL,
-                    ExifInterface.TAG_SERIAL_NUMBER,
                     ExifInterface.TAG_SOFTWARE,
                     ExifInterface.TAG_DATETIME,
                     ExifInterface.TAG_DATETIME_ORIGINAL,
