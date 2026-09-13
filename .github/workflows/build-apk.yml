@@ -39,7 +39,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build standalone release APK
-        run: ./gradlew :TMessagesProj_AppStandalone:assembleStandaloneRelease --no-daemon --stacktrace
+        run: ./gradlew :TMessagesProj_AppStandalone:assembleAfatRelease --no-daemon --stacktrace
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
