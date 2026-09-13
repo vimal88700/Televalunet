@@ -1,12 +1,12 @@
-# Shrink High Feature Roadmap
+# Televalunet Feature Roadmap
 
-This repository is an unofficial Telegram Android client based on the official Telegram Android source. It is organized as staged work so each change can be reviewed and built independently.
+This repository is the unofficial **Televalunet** Android client based on the official Telegram Android source. It is organized as staged work so each change can be reviewed and built independently.
 
 ## Implemented in this sprint
 
 | Area | Status | Notes |
 | --- | --- | --- |
-| Android CI | Implemented | GitHub Actions builds the standalone release APK and uploads it as an artifact. |
+| Android CI | Implemented | GitHub Actions builds the standalone release APK and uploads it as a Televalunet artifact. |
 | Account capacity | Implemented | Account storage arrays and account iteration use a 100-account capacity. Server limits, device resources, and UX still need dedicated testing. |
 | Download tuning | Implemented as a bounded configuration point | The downloader exposes an 8-worker tuning constant; it must be benchmarked on real devices before increasing further. |
 | Local privacy utilities | Implemented as reusable utilities | EXIF stripping and app-private cache wiping are available for integration into user-triggered flows. |

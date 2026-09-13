@@ -47,7 +47,7 @@ jobs:
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
         with:
-          name: shrink-high-standalone-release
+          name: televalunet-standalone-release
           path: TMessagesProj_AppStandalone/build/outputs/apk/**/*.apk
           if-no-files-found: error
           retention-days: 14
